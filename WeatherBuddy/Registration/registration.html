@@ -1,0 +1,77 @@
+<!Doctype HTML>
+
+<head>
+	<title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="registration.css"> 
+</head>
+
+<body onload="document.registration.userid.focus();">
+<div class='form_start'>
+	<form class='form-body' name='registration' onSubmit="return formValidation();">
+
+	<h1 style="color: dodgerblue"> Join Us </h1>
+
+	<label for="ucountry">Country</label><br>
+	<select id="country">
+      <option value="" disabled selected hidden>Select Your Country</option>
+      <option value="X">India</option>
+      <option value="Y">Russia</option>
+      <option value="Z">USA</option>
+      <option value="Z">Germany</option>
+      <option value="Z">France</option>
+      <option value="Z">United Kingdom</option>
+      <option value="Z">Canada</option>
+    </select>
+
+    <table>
+        <tr>
+          <th class="first-col"></th>
+          <th>Male</th>
+          <th>Female</th>
+        </tr>
+        <tr>
+          <td class="first-col" name="choose gender">Gender</td>
+          <td><input type="radio" value="Male" name="msex" /></td>
+          <td><input type="radio" value="Female" name="fsex" /></td>
+        </tr>
+    </table>
+    <br>
+
+	<label for="userid">User ID</label><br>
+    <input type="text" name="userid" placeholder="Enter User ID"><br><br>
+    
+    <label for="passid">Password</label><br>
+    <input type="password" name="passid" placeholder="Enter Password"><br><br>
+
+    <!--<label for="cpassid">Confirm Password</label><br>
+    <input type="password" name="cpassid" placeholder="Confirm Password"><br><br>-->
+    
+    <label for="username">Name</label><br>
+	<input type="text" name="username" placeholder="Enter Name"><br><br>
+
+    <label for="address">Address</label><br>
+    <input type="text" name="address" placeholder="Enter Address"><br><br>
+    
+    <label for="zip">ZIP Code</label><br>
+    <input type="text" name="zip" placeholder="Enter Zip Code"><br><br>
+    
+    <label for="email">Email</label><br>
+    <input type="text" name="email" placeholder="Enter Email"><br><br>
+    
+    <label for="phone">Phone</label><br>
+	<input type="text" name="phone" placeholder="Enter Phone"><br><br>
+		
+    <p class="question">Tell Us About Yourself</p>
+    <textarea rows="5"></textarea><br>
+
+        
+    <div class="btn-block">
+        <button class="btn" type="submit" href="/">Submit</button>
+    </div>
+        
+	</form>
+
+</div>
+<script src="register_validation.js"></script>
+</body>
+
